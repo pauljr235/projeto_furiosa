@@ -1,5 +1,57 @@
-$fontePricipal: red;
+@use 'hero';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+$corDeFundo: #000000;
 
 body{
-    background-color: $fontePricipal;
+    background-color: $corDeFundo;
+}
+
+
+.sinopse{
+    &__content{
+        p{
+            font-size: 18px;
+            font-family: sans-serif;
+            font-weight: bold;
+            font-family: "Libre Baskerville", serif;
+        }
+    }
+}
+
+footer{
+
+    position:sticky;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    transition: position 0.3s;
+
+    a{
+        color: #ffffff9b;
+        text-decoration: none;
+        font-size: 12px;
+        font-family: "Libre Baskerville", serif;
+        font-weight: 400;
+        
+    }
+    p{
+        padding-top: 16px;
+        color: rgba(255, 255, 255, 0.892);
+    }
+}
+
+header{
+    text-align: center;
+    img{
+        width: 25%;
+    }
 }
